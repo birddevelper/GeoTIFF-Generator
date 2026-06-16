@@ -1,0 +1,13 @@
+services:
+  geotiff_maker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: geotiff_maker:latest
+    container_name: geotiff_maker
+    working_dir: /app
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    command: bash

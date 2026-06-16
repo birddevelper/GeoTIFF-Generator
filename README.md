@@ -11,6 +11,10 @@ The generated raster stores moisture as byte values from `0` to `100`, where eac
 represents a percent moisture level. Pixels outside the farm boundary, or beyond the
 optional distance limit, are written as NoData.
 
+<p align="center">
+  <img src="output/geotiff_leaflet.jpg" alt="Example generated GeoTIFF preview" width="700">
+</p>
+
 ## Usage
 
 The CLI entrypoint is `make_geotiff.py`, which expects:

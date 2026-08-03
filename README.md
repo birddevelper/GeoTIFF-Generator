@@ -2,13 +2,13 @@
 
 ## Description
 
-`geotiff_maker` creates a single-band GeoTIFF from point-based soil moisture readings.
+`geotiff_maker` creates a single-band GeoTIFF from point-based ground data readings.
 It reads a CSV file containing moisture samples, interpolates those values across a raster
 grid, clips the result to a farm boundary from GeoJSON, and writes an output GeoTIFF in
 `EPSG:4326`.
 
 The generated raster stores moisture as byte values from `0` to `100`, where each value
-represents a percent moisture level. Pixels outside the farm boundary, or beyond the
+represents a percent level of data. Pixels outside the boundary, or beyond the
 optional distance limit, are written as NoData.
 
 <p align="center">

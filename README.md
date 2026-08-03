@@ -19,7 +19,7 @@ optional distance limit, are written as NoData.
 
 The CLI entrypoint is `make_geotiff.py`, which expects:
 
-- A CSV file with the columns `moisture`, `latitude`, `longitude`, and `sampled_at`
+- A CSV file with the columns `data`, `latitude`, `longitude`, and `sampled_at`
 - A boundary GeoJSON file containing a `Polygon` or `MultiPolygon`
 
 Example CSV header:
